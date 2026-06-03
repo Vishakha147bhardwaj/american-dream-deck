@@ -1,0 +1,86 @@
+/* ── Progress Bar ── */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 220px;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(
+    to right,
+    var(--color-gold),
+    var(--color-gold-light)
+  );
+  z-index: 999;
+  transition: width 0.1s linear;
+}
+
+/* ── Loader ── */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: var(--color-void);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.loader-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  color: var(--color-muted);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+}
+
+.loader-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 7rem);
+  color: var(--color-white);
+  font-weight: 300;
+  line-height: 0.9;
+}
+
+.loader-bar-wrapper {
+  width: 200px;
+  height: 1px;
+  background: var(--color-border);
+  overflow: hidden;
+}
+
+.loader-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--color-gold);
+}
+
+/* ── Nav Active State ── */
+.nav-item.active {
+  background: color-mix(in srgb, var(--color-gold) 8%, transparent);
+}
+
+.nav-item.active .nav-number {
+  color: var(--color-gold);
+}
+
+/* ── Gold Glow on Hover for CTAs ── */
+.intro-cta:hover,
+.events-banner-cta:hover {
+  box-shadow: var(--shadow-gold);
+}
+
+/* ── Better Typography Rendering ── */
+h1,
+h2,
+h3 {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}

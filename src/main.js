@@ -6,6 +6,12 @@ import {
   initNavClicks,
 } from "./components/nav.js";
 import { createBuyerMode, initBuyerMode } from "./components/buyerMode.js";
+import {
+  createProgressBar,
+  initProgressBar,
+} from "./components/progressBar.js";
+import { createLoader, initLoader } from "./components/loader.js";
+import { initSectionReveal } from "./components/sectionReveal.js";
 
 import { createIntro, initIntroAnimations } from "./sections/intro.js";
 import { createOverview, initOverviewAnimations } from "./sections/overview.js";
@@ -18,6 +24,10 @@ import {
 } from "./sections/entertainment.js";
 import { createEvents, initEventsAnimations } from "./sections/events.js";
 import { createContact, initContactAnimations } from "./sections/contact.js";
+
+// Mount loader immediately
+createLoader();
+createProgressBar();
 
 const app = document.querySelector("#app");
 
@@ -46,14 +56,19 @@ const sections = [
 ];
 sections.forEach((s) => main.appendChild(s));
 
-initNavHighlight();
-initNavClicks();
-initBuyerMode();
-initIntroAnimations();
-initOverviewAnimations();
-initRetailAnimations();
-initLuxuryAnimations();
-initDiningAnimations();
-initEntertainmentAnimations();
-initEventsAnimations();
-initContactAnimations();
+// Wait for loader then init everything
+initLoader().then(() => {
+  initNavHighlight();
+  initNavClicks();
+  initBuyerMode();
+  initProgressBar();
+  initSectionReveal();
+  initIntroAnimations();
+  initOverviewAnimations();
+  initRetailAnimations();
+  initLuxuryAnimations();
+  initDiningAnimations();
+  initEntertainmentAnimations();
+  initEventsAnimations();
+  initContactAnimations();
+});
