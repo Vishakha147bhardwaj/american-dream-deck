@@ -1,0 +1,152 @@
+/* ── Entertainment Section ── */
+.entertainment-section {
+  background: var(--color-void);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.entertainment-header {
+  max-width: 700px;
+  margin-bottom: 4rem;
+}
+
+.entertainment-title em {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.entertainment-intro {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-muted);
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+
+/* Attractions Grid */
+.entertainment-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  margin-bottom: 2rem;
+}
+
+.attraction-card {
+  background: var(--color-surface);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: background var(--duration) var(--ease-smooth);
+  cursor: default;
+}
+
+.attraction-card:hover {
+  background: color-mix(in srgb, var(--color-gold) 5%, var(--color-surface));
+}
+
+.attraction-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.attraction-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.attraction-category {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  color: var(--color-gold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.attraction-stat {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  color: var(--color-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-border);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius);
+}
+
+.attraction-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-white);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.attraction-description {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* Bottom Banner */
+.entertainment-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 3rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  gap: 2rem;
+}
+
+.entertainment-banner-label {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  color: var(--color-gold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.entertainment-banner-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.entertainment-banner-text strong {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.entertainment-banner-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.entertainment-banner-number {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--color-gold);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.entertainment-banner-sublabel {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: var(--color-muted);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-align: center;
+}
