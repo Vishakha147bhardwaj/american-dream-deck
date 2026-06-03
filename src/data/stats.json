@@ -1,0 +1,40 @@
+{
+  "stats": [
+    {
+      "value": 40,
+      "suffix": "M+",
+      "label": "Annual Visitors",
+      "description": "More than any other mall in North America"
+    },
+    {
+      "value": 3.3,
+      "suffix": "M",
+      "label": "Square Feet",
+      "description": "Of retail, dining and entertainment space"
+    },
+    {
+      "value": 450,
+      "suffix": "+",
+      "label": "Retailers & Brands",
+      "description": "From luxury flagships to unique concepts"
+    },
+    {
+      "value": 10,
+      "suffix": " min",
+      "label": "From New York City",
+      "description": "Via direct bus, train and highway access"
+    },
+    {
+      "value": 20,
+      "suffix": "M",
+      "label": "Catchment Population",
+      "description": "Largest consumer market in the United States"
+    },
+    {
+      "value": 4.5,
+      "suffix": " hrs",
+      "label": "Average Dwell Time",
+      "description": "3x the industry average of 90 minutes"
+    }
+  ]
+}

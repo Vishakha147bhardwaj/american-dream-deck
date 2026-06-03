@@ -8,7 +8,7 @@ import {
 import { createBuyerMode, initBuyerMode } from "./components/buyerMode.js";
 
 import { createIntro, initIntroAnimations } from "./sections/intro.js";
-import { createOverview } from "./sections/overview.js";
+import { createOverview, initOverviewAnimations } from "./sections/overview.js";
 import { createRetail } from "./sections/retail.js";
 import { createLuxury } from "./sections/luxury.js";
 import { createDining } from "./sections/dining.js";
@@ -47,3 +47,4 @@ initNavHighlight();
 initNavClicks();
 initBuyerMode();
 initIntroAnimations();
+initOverviewAnimations();
