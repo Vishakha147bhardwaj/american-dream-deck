@@ -1,0 +1,48 @@
+:root {
+  /* ── Colors ── */
+  --color-void: #08080a; /* main background */
+  --color-surface: #111114; /* cards, panels */
+  --color-border: #1e1e24; /* subtle dividers */
+
+  --color-gold: #c9a84c; /* primary accent */
+  --color-gold-light: #e8c97a; /* hover state */
+  --color-gold-dim: #c9a84c33; /* gold at 20% opacity */
+
+  --color-white: #ffffff; /* headlines */
+  --color-platinum: #e8e8e8; /* body text */
+  --color-muted: #888896; /* labels, captions */
+
+  /* Buyer mode colors */
+  --color-lease: #4c9be8; /* blue  — retail */
+  --color-partner: #8b5cf6; /* purple — sponsorship */
+  --color-book: #e84c4c; /* red   — events */
+
+  /* ── Typography ── */
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* Type scale */
+  --text-hero: clamp(3.5rem, 10vw, 9rem);
+  --text-section: clamp(2rem, 5vw, 5rem);
+  --text-card: clamp(1.25rem, 2vw, 1.75rem);
+  --text-body: 1rem;
+  --text-label: 0.75rem;
+
+  --tracking-wide: 0.15em;
+  --tracking-wider: 0.25em;
+
+  /* ── Spacing ── */
+  --section-padding: clamp(4rem, 10vh, 8rem);
+  --container-max: 1400px;
+  --container-pad: clamp(1.5rem, 5vw, 4rem);
+
+  /* ── Effects ── */
+  --shadow-gold: 0 0 40px rgba(201, 168, 76, 0.15);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --radius: 4px;
+  --radius-lg: 12px;
+
+  /* ── Transitions ── */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 0.4s;
+}
