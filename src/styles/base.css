@@ -3,7 +3,26 @@
   display: flex;
   min-height: 100vh;
 }
+body {
+  background-color: var(--color-void);
+  color: var(--color-platinum);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+/* ── Overflow Guard ── */
+#layout,
+#main-content {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
+.luxury-brands-marquee {
+  overflow: hidden;
+  max-width: 100%;
+}
 #sidebar {
   position: fixed;
   top: 0;
