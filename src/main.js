@@ -16,8 +16,8 @@ import {
   createEntertainment,
   initEntertainmentAnimations,
 } from "./sections/entertainment.js";
-import { createEvents } from "./sections/events.js";
-import { createContact } from "./sections/contact.js";
+import { createEvents, initEventsAnimations } from "./sections/events.js";
+import { createContact, initContactAnimations } from "./sections/contact.js";
 
 const app = document.querySelector("#app");
 
@@ -55,3 +55,5 @@ initRetailAnimations();
 initLuxuryAnimations();
 initDiningAnimations();
 initEntertainmentAnimations();
+initEventsAnimations();
+initContactAnimations();

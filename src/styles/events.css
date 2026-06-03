@@ -1,0 +1,193 @@
+/* ── Events Section ── */
+.events-section {
+  background: var(--color-void);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.events-header {
+  max-width: 700px;
+  margin-bottom: 4rem;
+}
+
+.events-title em {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.events-intro {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-muted);
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+
+/* Layout */
+.events-layout {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.events-col-label {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  color: var(--color-muted);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+/* Venue Cards */
+.events-venues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+}
+
+.events-venue-card {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  transition: background var(--duration) var(--ease-smooth);
+}
+
+.events-venue-card:hover {
+  background: color-mix(in srgb, var(--color-gold) 5%, var(--color-surface));
+}
+
+.events-venue-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.events-venue-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+.events-venue-capacity {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-gold);
+  font-weight: 300;
+}
+
+.events-venue-type {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  letter-spacing: 0.03em;
+}
+
+/* Past Events */
+.events-past-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.events-past-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: all var(--duration) var(--ease-smooth);
+}
+
+.events-past-item:hover {
+  padding-left: 0.5rem;
+  border-bottom-color: var(--color-gold);
+}
+
+.events-past-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.events-past-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.events-past-name {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-white);
+}
+
+.events-past-category {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: var(--color-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.events-past-reach {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  color: var(--color-gold);
+  letter-spacing: 0.03em;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Banner */
+.events-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+  border: 1px solid var(--color-gold-dim);
+  background: color-mix(in srgb, var(--color-gold) 5%, var(--color-surface));
+}
+
+.events-banner-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-white);
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.events-banner-sub {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.events-banner-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: var(--color-gold);
+  color: var(--color-void);
+  border: none;
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 500;
+  transition: all var(--duration) var(--ease-smooth);
+}
+
+.events-banner-cta:hover {
+  background: var(--color-gold-light);
+}
