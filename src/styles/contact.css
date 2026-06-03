@@ -152,3 +152,9 @@
   letter-spacing: var(--tracking-wider);
   text-transform: uppercase;
 }
+/* .contact-path-card {
+  opacity: 1 !important;
+  transform: none !important;
+  width: 100% !important;
+  display: flex !important;
+} */

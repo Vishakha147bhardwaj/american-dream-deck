@@ -160,7 +160,11 @@ export function createEvents() {
 
 export function initEventsAnimations() {
   gsap.from(".events-title", {
-    scrollTrigger: { trigger: ".events-section", start: "top 80%" },
+    scrollTrigger: {
+      trigger: ".events-section",
+      start: "top 80%",
+      once: true,
+    },
     opacity: 0,
     y: 40,
     duration: 0.8,
@@ -168,35 +172,51 @@ export function initEventsAnimations() {
   });
 
   gsap.from(".events-intro", {
-    scrollTrigger: { trigger: ".events-section", start: "top 75%" },
+    scrollTrigger: {
+      trigger: ".events-section",
+      start: "top 75%",
+      once: true,
+    },
     opacity: 0,
     y: 20,
     duration: 0.8,
-    delay: 0.2,
+    delay: 0.15,
     ease: "power2.out",
   });
 
-  gsap.from(".events-venue-card", {
-    scrollTrigger: { trigger: ".events-layout", start: "top 80%" },
+  // Animate the left column as one unit
+  gsap.from(".events-venues", {
+    scrollTrigger: {
+      trigger: ".events-layout",
+      start: "top 80%",
+      once: true,
+    },
     opacity: 0,
     x: -30,
-    duration: 0.6,
-    stagger: 0.1,
+    duration: 0.7,
     ease: "power2.out",
   });
 
-  gsap.from(".events-past-item", {
-    scrollTrigger: { trigger: ".events-layout", start: "top 80%" },
+  // Animate the right column as one unit
+  gsap.from(".events-past", {
+    scrollTrigger: {
+      trigger: ".events-layout",
+      start: "top 80%",
+      once: true,
+    },
     opacity: 0,
     x: 30,
-    duration: 0.6,
-    stagger: 0.1,
-    ease: "power2.out",
+    duration: 0.7,
     delay: 0.1,
+    ease: "power2.out",
   });
 
   gsap.from(".events-banner", {
-    scrollTrigger: { trigger: ".events-banner", start: "top 85%" },
+    scrollTrigger: {
+      trigger: ".events-banner",
+      start: "top 85%",
+      once: true,
+    },
     opacity: 0,
     y: 30,
     duration: 0.8,

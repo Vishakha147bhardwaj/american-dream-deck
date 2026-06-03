@@ -15,7 +15,11 @@ import { initSectionReveal } from "./components/sectionReveal.js";
 
 import { createIntro, initIntroAnimations } from "./sections/intro.js";
 import { createOverview, initOverviewAnimations } from "./sections/overview.js";
-import { createRetail, initRetailAnimations } from "./sections/retail.js";
+import {
+  createRetail,
+  initRetailAnimations,
+  initRetailInteractions,
+} from "./sections/retail.js";
 import { createLuxury, initLuxuryAnimations } from "./sections/luxury.js";
 import { createDining, initDiningAnimations } from "./sections/dining.js";
 import {
@@ -66,6 +70,7 @@ initLoader().then(() => {
   initIntroAnimations();
   initOverviewAnimations();
   initRetailAnimations();
+  initRetailInteractions();
   initLuxuryAnimations();
   initDiningAnimations();
   initEntertainmentAnimations();

@@ -118,16 +118,14 @@ export function initDiningAnimations() {
     delay: 0.15,
   });
 
-  gsap.from(".dining-concept-item", {
+  gsap.from(".dining-concepts", {
     scrollTrigger: {
       trigger: ".dining-concepts",
-      start: "top 80%",
+      start: "top 85%",
       once: true,
     },
-    opacity: 0,
-    y: 12,
-    duration: 0.5,
-    stagger: 0.05,
+    y: 15,
+    duration: 0.6,
     ease: "power2.out",
   });
 

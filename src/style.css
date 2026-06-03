@@ -2,6 +2,7 @@
 @import "./styles/tokens.css";
 @import "./styles/base.css";
 @import "./styles/polish.css";
+@import "./styles/buyerMode.css";
 @import "./styles/intro.css";
 @import "./styles/overview.css";
 @import "./styles/retail.css";

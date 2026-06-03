@@ -1,0 +1,77 @@
+/* ── Buyer Callout Banners ── */
+.buyer-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--callout-color);
+  background: color-mix(in srgb, var(--callout-color) 8%, var(--color-surface));
+  margin-bottom: 2.5rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  animation: calloutFadeIn 0.5s ease forwards;
+}
+
+@keyframes calloutFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.buyer-callout-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: var(--callout-color);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.buyer-callout-text {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-platinum);
+  line-height: 1.6;
+}
+
+/* ── Nav Priority States ── */
+.nav-item.nav-priority-high .nav-label {
+  color: var(--color-white);
+}
+
+.nav-item.nav-priority-high .nav-dot {
+  background: var(--color-gold);
+  box-shadow: 0 0 6px var(--color-gold);
+}
+
+.nav-item.nav-priority-low .nav-label {
+  color: var(--color-muted);
+  opacity: 0.6;
+}
+
+.nav-item.nav-priority-low .nav-number {
+  opacity: 0.4;
+}
+
+/* ── Active Contact Path ── */
+.contact-path-card.contact-path-active {
+  border-color: var(--color-gold) !important;
+  background: color-mix(
+    in srgb,
+    var(--color-gold) 8%,
+    rgba(17, 17, 20, 0.9)
+  ) !important;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+  transition: all 0.4s var(--ease-smooth);
+}
+
+.contact-path-card.contact-path-active .contact-path-title {
+  color: var(--color-gold) !important;
+}

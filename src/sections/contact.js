@@ -100,28 +100,71 @@ export function createContact() {
 }
 
 export function initContactAnimations() {
+  // Prevent duplicate triggers if this function gets called again
+  ScrollTrigger.getAll().forEach((trigger) => {
+    const triggerEl = trigger.vars?.trigger;
+
+    if (
+      triggerEl === ".contact-section" ||
+      triggerEl === ".contact-paths" ||
+      triggerEl === ".contact-closing"
+    ) {
+      trigger.kill();
+    }
+  });
+
+  // Header
   gsap.from(".contact-title", {
-    scrollTrigger: { trigger: ".contact-section", start: "top 80%" },
+    scrollTrigger: {
+      trigger: ".contact-section",
+      start: "top 80%",
+      once: true,
+    },
     opacity: 0,
     y: 40,
     duration: 0.9,
     ease: "power2.out",
   });
 
-  gsap.from(".contact-path-card", {
-    scrollTrigger: { trigger: ".contact-paths", start: "top 80%" },
+  // Animate the entire cards container instead of each card
+  gsap.from(".contact-paths", {
+    scrollTrigger: {
+      trigger: ".contact-paths",
+      start: "top 80%",
+      once: true,
+    },
     opacity: 0,
-    y: 50,
-    duration: 0.7,
-    stagger: 0.15,
+    y: 40,
+    duration: 0.8,
     ease: "power2.out",
+    clearProps: "all",
   });
 
+  // Closing statement
   gsap.from(".contact-closing", {
-    scrollTrigger: { trigger: ".contact-closing", start: "top 85%" },
+    scrollTrigger: {
+      trigger: ".contact-closing",
+      start: "top 85%",
+      once: true,
+    },
     opacity: 0,
     y: 30,
     duration: 0.9,
     ease: "power2.out",
+  });
+  gsap.from(".contact-path-card", {
+    scrollTrigger: {
+      trigger: ".contact-paths",
+      start: "top 80%",
+      once: true,
+    },
+    opacity: 0,
+    y: 30,
+    duration: 0.5,
+    stagger: {
+      each: 0.1,
+      from: "start",
+    },
+    clearProps: "transform,opacity",
   });
 }

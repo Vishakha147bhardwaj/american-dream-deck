@@ -150,3 +150,15 @@ export function initRetailAnimations() {
     ease: "power2.out",
   });
 }
+export function initRetailInteractions() {
+  const leaseBtn = document.querySelector(".lease-cta");
+
+  leaseBtn?.addEventListener("click", () => {
+    document.querySelector('[data-mode="lease"]')?.click();
+
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
