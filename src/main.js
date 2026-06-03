@@ -1,9 +1,9 @@
 import "./style.css";
-
 import {
   createNav,
   initNavHighlight,
   initNavClicks,
+  initMobileMenu,
 } from "./components/nav.js";
 import { createBuyerMode, initBuyerMode } from "./components/buyerMode.js";
 import {
@@ -63,6 +63,7 @@ sections.forEach((s) => main.appendChild(s));
 // Wait for loader then init everything
 initLoader().then(() => {
   initNavHighlight();
+  initMobileMenu();
   initNavClicks();
   initBuyerMode();
   initProgressBar();

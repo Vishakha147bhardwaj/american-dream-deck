@@ -31,6 +31,12 @@ export function createNav() {
         .join("")}
     </ul>
 
+    <button id="mobile-menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <div class="nav-footer">
       <span class="nav-footer-text">American Dream</span>
     </div>
@@ -67,6 +73,23 @@ export function initNavClicks() {
     item.addEventListener("click", () => {
       const id = item.dataset.section;
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+}
+
+export function initMobileMenu() {
+  const btn = document.getElementById("mobile-menu-btn");
+  const sidebar = document.getElementById("sidebar");
+
+  if (!btn) return;
+
+  btn.addEventListener("click", () => {
+    sidebar.classList.toggle("menu-open");
+  });
+
+  document.querySelectorAll(".nav-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      sidebar.classList.remove("menu-open");
     });
   });
 }
