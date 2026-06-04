@@ -41,7 +41,7 @@ export function createRetail() {
         <div class="retail-left">
           <div class="retail-image-wrapper">
             <img
-             src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&q=80"
+             src="/src/assets/images/Retail.jpg"
               alt="American Dream Retail"
               class="retail-image"
               loading="lazy"
