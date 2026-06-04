@@ -155,7 +155,6 @@ const callouts = {
 };
 
 function updateSectionCallouts(mode) {
-  // Remove existing callouts
   document.querySelectorAll(".buyer-callout").forEach((el) => el.remove());
 
   const modeCallouts = callouts[mode];
@@ -175,7 +174,15 @@ function updateSectionCallouts(mode) {
     const section = document.getElementById(sectionId);
     if (!section) return;
 
-    const inner = section.querySelector(".section-inner") || section;
+    // Use section-specific content containers
+    const target =
+      section.querySelector(".dining-content") ||
+      section.querySelector(".retail-right") ||
+      section.querySelector(".luxury-content") ||
+      section.querySelector(".luxury-inner") ||
+      section.querySelector(".section-inner") ||
+      section;
+
     const callout = document.createElement("div");
     callout.className = "buyer-callout";
     callout.style.setProperty("--callout-color", modeColor);
@@ -184,8 +191,7 @@ function updateSectionCallouts(mode) {
       <p class="buyer-callout-text">${text}</p>
     `;
 
-    // Insert at top of section inner
-    inner.insertBefore(callout, inner.firstChild);
+    target.insertBefore(callout, target.firstChild);
   });
 }
 
