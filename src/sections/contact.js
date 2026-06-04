@@ -13,7 +13,7 @@ export function createContact() {
     <!-- Background -->
     <div class="contact-bg">
       <img
-        src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1600&q=80"
+        src="/images/contact.jpg"
         alt="American Dream"
         class="contact-bg-img"
         loading="lazy"

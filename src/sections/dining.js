@@ -29,7 +29,7 @@ export function createDining() {
     <!-- Left Panel: Image -->
     <div class="dining-image-panel">
       <img
-        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+        src="/images/dining.jpg"
         alt="Fine dining experience"
         class="dining-image"
         loading="lazy"
