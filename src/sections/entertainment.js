@@ -75,7 +75,22 @@ export function createEntertainment() {
           retailer or standalone venue could produce on its own.
         </p>
       </div>
-
+<!-- Video -->
+<div class="entertainment-video-wrapper">
+  <div class="entertainment-video-container">
+    <iframe
+      src="https://www.youtube.com/embed/tMp6218iL5s?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&playlist=tMp6218iL5s&modestbranding=1"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+      class="entertainment-video"
+    ></iframe>
+  </div>
+  <div class="entertainment-video-label">
+    <span>▶</span>
+    <span>Nickelodeon Universe — Inside America's Largest Indoor Theme Park</span>
+  </div>
+</div>
       <!-- Attractions Grid -->
       <div class="entertainment-grid">
         ${attractions
