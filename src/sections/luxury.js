@@ -28,7 +28,7 @@ export function createLuxury() {
     <!-- Full bleed background image -->
     <div class="luxury-bg">
       <img
-        src="/src/assets/images/luxury.jpg"
+        src="/images/luxury.jpg"
         alt="Luxury retail environment"
         class="luxury-bg-img"
         loading="lazy"
