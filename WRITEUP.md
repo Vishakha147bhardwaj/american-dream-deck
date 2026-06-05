@@ -80,23 +80,25 @@ and video pop without competing with the content.
 
 ## How I Used AI
 
-AI was used at every layer of this project, not just for image generation:
+AI was used strategically at every layer of this project:
 
-**Claude (Anthropic)** was my primary development partner — used for
-architecture planning, component scaffolding, debugging CSS conflicts,
-and systematic problem-solving. Rather than using it to generate code
-blindly, I used it to think through decisions, understand tradeoffs,
-and move fast without sacrificing structure. Every line of code was
-reviewed and understood before committing.
+**Ideogram.ai** was the primary tool for visual asset generation — all hero
+images across the deck were generated using carefully crafted prompts to
+produce photorealistic architectural renders and atmospheric photography
+that matched the luxury aesthetic of the property. This replaced what would
+otherwise require a professional photographer or 3D artist.
 
-**Ideogram.ai** generated the retail corridor and luxury wing hero
-images — photorealistic architectural renders that would have required
-a professional photographer or 3D artist otherwise.
+Prompts were iterated to achieve the right balance of:
 
-The honest answer on AI fluency: the biggest unlock wasn't using AI
-to write code faster. It was using AI to **think faster** — to rapidly
-evaluate architectural options, catch bugs before they compounded,
-and maintain quality under time pressure.
+- Cinematic dark atmosphere matching the gold/black design system
+- Architectural scale that communicates the property's ambition
+- Photorealistic quality indistinguishable from real photography
+
+**The broader AI integration philosophy:** rather than using AI to generate
+generic assets, every image was purpose-built for its section — the retail
+corridor communicates scale and brand density, the luxury wing communicates
+prestige, the dining image communicates atmosphere. AI was a creative tool,
+not a shortcut.
 
 ---
 
