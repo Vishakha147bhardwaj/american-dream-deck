@@ -1,7 +1,7 @@
 /* ══════════════════════════════════════
-   TABLET — 768px to 1024px
+   TABLET — 769px to 1024px
 ══════════════════════════════════════ */
-@media (max-width: 1024px) {
+@media (min-width: 770px) and (max-width: 1024px) {
   /* ── Sidebar ── */
   #sidebar {
     width: 180px;
@@ -57,10 +57,20 @@
   /* ── Dining Section ── */
   .dining-section {
     grid-template-columns: 1fr !important;
+    min-height: auto !important;
   }
 
   .dining-image-panel {
-    min-height: 400px;
+    min-height: 60vh !important;
+    height: 60vh !important;
+  }
+
+  .dining-image-stats {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .dining-content-panel {
+    padding: 3rem 2rem !important;
   }
 
   /* ── Entertainment Banner ── */
@@ -81,7 +91,7 @@
 /* ══════════════════════════════════════
    MOBILE — below 768px
 ══════════════════════════════════════ */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   /* ── Sidebar becomes top bar ── */
   #sidebar {
     position: fixed;
@@ -178,10 +188,6 @@
   :root {
     --text-hero: clamp(3rem, 15vw, 5rem);
     --text-section: clamp(1.75rem, 8vw, 3rem);
-  }
-
-  /* ── Section Padding ── */
-  :root {
     --section-padding: 3rem;
     --container-pad: 1.25rem;
   }
@@ -200,22 +206,45 @@
   .dining-section {
     grid-template-columns: 1fr !important;
     display: flex !important;
-    flex-direction: column;
+    flex-direction: column !important;
+    min-height: auto !important;
   }
 
   .dining-image-panel {
-    min-height: 300px;
-    max-height: 350px;
+    min-height: 55vh !important;
+    height: 55vh !important;
+    width: 100% !important;
+    overflow: hidden !important;
   }
 
+  .dining-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .dining-image-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  .dining-image-stat {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .dining-image-stat-value {
+    font-size: 1.25rem !important;
+  }
+
+  .dining-content-panel {
+    width: 100% !important;
+    padding: 2rem 1.25rem !important;
+    align-items: flex-start !important;
+  }
   /* ── Retail Mini Stats ── */
   .retail-mini-stats {
     grid-template-columns: 1fr !important;
-  }
-
-  /* ── Dining Image Stats ── */
-  .dining-image-stats {
-    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   /* ── Entertainment Banner ── */

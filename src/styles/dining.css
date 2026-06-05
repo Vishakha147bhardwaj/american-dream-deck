@@ -1,7 +1,7 @@
 /* ── Dining Section ── */
 .dining-section {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   min-height: 100vh;
   padding: 0 !important;
   overflow: hidden;
@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 100%;
 }
 
 .dining-image {
