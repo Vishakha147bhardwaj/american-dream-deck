@@ -18,7 +18,7 @@ Built as a high-stakes sales tool for prospective **retail tenants**, **brand sp
 - **Cinematic page loader** — branded entry experience
 - **Fully responsive** — desktop, tablet, and mobile with hamburger menu
 - **Two YouTube videos** — intro hero and entertainment section
-- **AI-generated imagery** — retail and luxury sections use Ideogram.ai generated visuals
+- **AI-generated imagery** — all hero images generated using Ideogram.ai
 
 ---
 
@@ -159,11 +159,10 @@ Gold (`#C9A84C`) as the primary accent against a near-black void (`#08080A`) —
 
 ## AI Tools Used
 
-| Tool                   | Usage                                                                |
-| ---------------------- | -------------------------------------------------------------------- |
-| **Ideogram.ai**        | Generated retail corridor and luxury wing hero images                |
-| **Claude (Anthropic)** | Architecture planning, component scaffolding, debugging, CSS systems |
-| **Unsplash**           | Supplementary photography for dining and contact sections            |
+| Tool                   | Usage                                                                                          |
+| ---------------------- | ---------------------------------------------------------------------------------------------- |
+| **Ideogram.ai**        | Generated all hero images — retail corridor, luxury wing, dining ambiance, and contact section |
+| **Claude (Anthropic)** | Used as a development assistant for debugging and research                                     |
 
 ---
 
